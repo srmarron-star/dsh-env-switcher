@@ -57,7 +57,7 @@ wsl --install -d Ubuntu-24.04
 ```
 
 - 首次安装会要求**重启电脑**
-- 重启后按提示创建 Linux 用户名和密码（如 `fsc`）
+- 重启后按提示创建 Linux 用户名和密码
 - 验证安装：
 
 ```powershell
