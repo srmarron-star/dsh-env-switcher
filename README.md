@@ -136,10 +136,13 @@ dsh web          # default port 3080
 ### 5. Install this plugin
 
 ```bash
-# Option 1: npm install (once published)
+# Option 1: install directly from GitHub (recommended; the repo is published)
+dsh plugin --profile web add github:Oyama-Mahiro-F/dsh-env-switcher
+
+# Option 2: npm install (once published to npm)
 dsh plugin --profile web add dsh-env-switcher
 
-# Option 2: local source install
+# Option 3: local source install
 dsh plugin --profile web add file:/path/to/dsh-env-switcher
 ```
 

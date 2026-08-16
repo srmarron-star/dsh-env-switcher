@@ -123,10 +123,13 @@ dsh web          # 默认端口 3080
 ### 5. 安装本插件
 
 ```bash
-# 方式一：npm 安装（发布后）
+# 方式一：直接从 GitHub 安装（推荐，仓库已发布）
+dsh plugin --profile web add github:Oyama-Mahiro-F/dsh-env-switcher
+
+# 方式二：npm 安装（发布到 npm 后）
 dsh plugin --profile web add dsh-env-switcher
 
-# 方式二：本地源码安装
+# 方式三：本地源码安装
 dsh plugin --profile web add file:/path/to/dsh-env-switcher
 ```
 
