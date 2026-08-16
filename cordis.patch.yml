@@ -1,0 +1,13 @@
+# dsh-env-switcher bundle patch layer.
+# Config: override any field to match your machine (see README).
+- insert:
+    - id: dsh-env-switcher
+      name: dsh-env-switcher
+      config:
+        winPort: 3080
+        wslPort: 3081
+        wslDistro: Ubuntu-24.04
+        wslNodeBin: /home/fsc/.node/node-v24.0.0-linux-x64/bin
+        wslLog: /home/fsc/dsh-web.log
+        winLog: D:\deepseek-harness\logs\dsh-web-win.log
+        winWorkingDir: C:\Users\61468
