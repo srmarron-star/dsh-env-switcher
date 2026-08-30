@@ -1,7 +1,7 @@
 {
   "name": "dsh-env-switcher",
-  "version": "1.1.0",
-  "description": "Windows/WSL environment switcher for the DSH web UI (coexistence model)",
+  "version": "1.2.0",
+  "description": "Windows/WSL environment switcher for the DSH web UI (coexistence model; mid-column sidebar entry, collapse-aware)",
   "main": "lib/index.js",
   "exports": {
     ".": {
@@ -17,7 +17,8 @@
     "cordis.patch.yml",
     "README.md",
     "README.zh-CN.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "keywords": [
     "dsh",
