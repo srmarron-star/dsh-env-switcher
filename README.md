@@ -1,5 +1,7 @@
 # dsh-env-switcher
 
+**English** · [简体中文](README.zh-CN.md)
+
 A DeepSeek Harness plugin that lets you switch between a Windows DSH instance
 and a WSL2 (Linux) DSH instance from the web UI — **both running at the same
 time** (coexistence model).
