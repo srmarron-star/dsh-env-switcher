@@ -14,11 +14,13 @@ test("host bundle loads and exports the plugin contract", () => {
   assert.strictEqual(typeof host.apply, "function");
 });
 
-test("client bundle is a module-loader wrapper with both slot injections", () => {
+test("client bundle is a module-loader wrapper with tab + mid-column graft", () => {
   const src = fs.readFileSync(path.join(ROOT, "lib", "client.js"), "utf8");
   assert.ok(src.includes("window.__ModuleLoader__.load"), "missing module loader wrapper");
   assert.ok(src.includes("conversation.view"), "missing conversation.view tab injection");
-  assert.ok(src.includes("sidebar.footer.action"), "missing sidebar footer injection");
+  assert.ok(src.includes("sidebar.workspaces"), "missing sidebar workspaces graft anchor");
+  assert.ok(src.includes("dsh-env-switcher-middle"), "missing mid-column graft node id");
+  assert.ok(src.includes("data-sidebar-collapsed"), "missing collapse-aware guard");
   assert.ok(src.includes("dsh-env-switcher"), "missing plugin id");
 });
 
